@@ -1,0 +1,27 @@
+<!-- 檔案功能：前端搜尋頁面介面 -->
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>輔大師資課程智慧評鑒系統</title>
+    <!-- CSS功能：設定網頁簡約風格與輸入框樣式 -->
+    <style>
+        body { font-family: sans-serif; padding: 50px; text-align: center; background-color: #f9f9f9; }
+        .search-box { margin-bottom: 15px; }
+        input { padding: 12px 15px; width: 300px; border: 1px solid #ccc; border-radius: 8px; outline: none; }
+        button { padding: 10px 30px; background-color: #007bff; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>輔大師資課程智慧評鑒系統</h1>
+    <form action="/search" method="POST">
+        <!-- 輸入框功能：輸入系名 -->
+        <div class="search-box"> <input type="text" name="dept" placeholder="輸入系名 (選填)"> </div>
+        <!-- 輸入框功能：輸入課程名稱 -->
+        <div class="search-box"> <input type="text" name="course" placeholder="輸入課程名稱 (選填)"> </div>
+        <!-- 輸入框功能：輸入老師名稱 -->
+        <div class="search-box"> <input type="text" name="teacher" placeholder="輸入老師名稱 (選填)"> </div>
+        <button type="submit">開始查詢</button>
+    </form>
+</body>
+</html>
